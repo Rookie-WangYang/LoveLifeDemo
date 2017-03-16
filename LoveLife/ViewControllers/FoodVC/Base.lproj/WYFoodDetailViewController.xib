@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WYFoodDetailViewController">
+            <connections>
+                <outlet property="detailLabel" destination="qkA-jT-C0P" id="FL1-wn-ir3"/>
+                <outlet property="haha" destination="b2p-sp-MQR" id="4Dp-Ob-bSd"/>
+                <outlet property="headerImage" destination="UCw-sW-C7O" id="ZIh-ky-Wyz"/>
+                <outlet property="playImage" destination="iCe-sp-Vq9" id="Nrc-Lt-RVY"/>
+                <outlet property="tableView" destination="ef0-oT-tyM" id="5FV-46-xh2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ef0-oT-tyM">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <view key="tableHeaderView" contentMode="scaleToFill" id="AG1-b6-p42">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="493"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UCw-sW-C7O">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="341"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconfont-bofang-3.png" translatesAutoresizingMaskIntoConstraints="NO" id="iCe-sp-Vq9">
+                                <rect key="frame" x="147" y="131" width="80" height="80"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="9bF-bt-XG0"/>
+                                    <constraint firstAttribute="width" constant="80" id="TiS-zO-Jkl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkA-jT-C0P">
+                                <rect key="frame" x="0.0" y="411" width="375" height="65"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2p-sp-MQR">
+                                <rect key="frame" x="0.0" y="361" width="284" height="50"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="284" id="F5O-AV-6YM"/>
+                                    <constraint firstAttribute="height" constant="50" id="YX0-FB-aLN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="qkA-jT-C0P" secondAttribute="bottom" constant="17" id="3xO-tU-Lhf"/>
+                            <constraint firstItem="iCe-sp-Vq9" firstAttribute="centerX" secondItem="UCw-sW-C7O" secondAttribute="centerX" constant="-0.5" id="Eb9-Fm-l3b"/>
+                            <constraint firstItem="UCw-sW-C7O" firstAttribute="leading" secondItem="AG1-b6-p42" secondAttribute="leading" id="F2g-7k-2cI"/>
+                            <constraint firstAttribute="trailing" secondItem="UCw-sW-C7O" secondAttribute="trailing" id="IcI-fi-TDH"/>
+                            <constraint firstItem="b2p-sp-MQR" firstAttribute="leading" secondItem="AG1-b6-p42" secondAttribute="leading" id="Pq1-fA-D5S"/>
+                            <constraint firstItem="iCe-sp-Vq9" firstAttribute="centerY" secondItem="UCw-sW-C7O" secondAttribute="centerY" constant="0.5" id="QVN-AI-thi"/>
+                            <constraint firstItem="UCw-sW-C7O" firstAttribute="top" secondItem="AG1-b6-p42" secondAttribute="top" id="Y7U-YB-eZ6"/>
+                            <constraint firstAttribute="bottom" secondItem="UCw-sW-C7O" secondAttribute="bottom" constant="152" id="Yth-e2-Hpx"/>
+                            <constraint firstItem="qkA-jT-C0P" firstAttribute="leading" secondItem="AG1-b6-p42" secondAttribute="leading" id="ZNf-Wb-g27"/>
+                            <constraint firstItem="b2p-sp-MQR" firstAttribute="top" secondItem="UCw-sW-C7O" secondAttribute="bottom" constant="20" id="kJ9-UL-5WH"/>
+                            <constraint firstAttribute="trailing" secondItem="qkA-jT-C0P" secondAttribute="trailing" id="yDN-4g-ht0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="2rs-jS-mi3"/>
+                        <outlet property="delegate" destination="-1" id="Ify-QE-xoO"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ef0-oT-tyM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="IFW-G9-SMc"/>
+                <constraint firstItem="ef0-oT-tyM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="N8d-Za-uzX"/>
+                <constraint firstAttribute="trailing" secondItem="ef0-oT-tyM" secondAttribute="trailing" id="NGV-uJ-Inx"/>
+                <constraint firstAttribute="bottom" secondItem="ef0-oT-tyM" secondAttribute="bottom" id="huP-OW-uPw"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="271.5" y="444.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconfont-bofang-3.png" width="64" height="64"/>
+    </resources>
+</document>
